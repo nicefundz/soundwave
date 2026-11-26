@@ -4,6 +4,86 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+
+    <style>
+     * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+     } 
+
+     :root {
+
+      --primary: #6366f1;
+      --primary-hover: #4f46e5;
+      --bg-dark: #0f172a;
+      --bg-card: #1e293b;
+      --text-light: #f8fafc;
+      --text-muted: #94a3b8;
+      --border: #334155;
+      --header-height: 70px;
+     }
+
+     html {
+      scroll-behavior: smooth;
+
+     }
+
+     body{
+
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      line-height: 1.6;
+
+     }
+
+     header{
+      position: fixed;
+      top: 0;
+      left:0;
+      width: 100%;
+      height: var(--header-height);
+      background-color: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur (8px);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 5%;
+      z-index: 1000;
+      
+     }
+
+    .logo{
+      front: size 1.5rem;
+      front: weight 700;
+      color:var(--text-light);
+      text-decoration: none;
+
+    }
+     
+    .logo span {
+      color: var(--primary);
+    }
+    nav ul{
+      display: flex;
+      list-style: none;
+      gap: 20px;
+
+
+    }
+
+    nav a  {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 6px;
+    }
+
+    </style>
+
   </head>
   <body>
     <header>
@@ -70,7 +150,28 @@
             </div>
           </div>
         </div>
+
+        <div class="slider-nav">
+          <a href="#slide-1"title="Go to slide 1"></a>
+          <a href="#slide-2"title="Go to slide 2"></a>
+          <a href="#slide-3"title="Go to slide 3"></a>
+        </div>
       </div>
+
+      <div>
+
+      </div id="about us" class="about section">
+      <h2>About our studio</h2>
+      <p>
+        Soundwave is an open-soure educational medial showcase disgin to demonstrate how far pure HTMLS and modern CSS3 can take web development without raling on heavy external dependencies.
+      </p>
+      <a href="#" cass="cta-btn">Explore full GalleryS</a>
     </main>
+    
+    <footer>
+      <p>
+        &copy; 2026 soundwave Media studio. Built with HTML5 &amp; css3 only.
+      </p>
+    </footer>
   </body>
 </html>
